@@ -5,11 +5,14 @@ html{
     font-family: bauhaus;
 	src: url("fonts/Bauhaus_.ttf") format('truetype');
 }
+button{
+	outline: none !important;
+}
 body{
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
-	font-family: 'Baumans', cursive;
+	font-family: 'Open Sans', cursive;
 }
 .navbar{
 	height: 100px;
@@ -20,7 +23,7 @@ body{
 	color: white;
 	transition: 0.3s;
 	font-size: 20px;
-	font-family: 'Baumans', cursive;
+	font-family: 'Open Sans', cursive;
 }
 .margint6p{
 	margin-top: 6px;
@@ -37,27 +40,133 @@ body{
 	color: #E5CD64; 
 	border-bottom: solid #E5CD64 2px;
 }
-@media only screen and (max-width: 1000px) {
-  	.active{
-		border: none;
-	}
-	.navbar{
-		height: auto;
-	}
-	.margint6p:hover{
-	transition: 0s;
-	color: #E5CD64; 
-	border-bottom: none;
-}
-}
-.navbar button{
-	outline: none;
+.navbtn{
 	background: #E5CD64 0% 0% no-repeat padding-box;
 	border-radius: 5px;
 	color: #555555;
 	padding: 12px 17px;
 	width: 124px;
 	text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+	.HomeDiv{
+		height: 500px !important;
+	}
+	.HomePara{
+		position: absolute;
+		top: 175px !important;
+		left: 30px !important;
+	}
+	.HomePara1{
+		font: normal 44px 'Open Sans', cursive !important;
+	}
+	.HomePara2{
+		font: normal 22px 'Open Sans', cursive !important;
+	}
+	.AboutDiv{
+		margin-bottom: 50px !important;
+	}
+	.AboutHead{
+		margin-top: 50px !important;
+		margin-bottom: 25px !important;
+		font: normal 42px 'Open Sans', cursive !important;
+	}
+	.AboutContent{
+		font: normal 17px 'Open Sans', cursive !important;
+	}
+	.MissionSec{
+		height: auto !important;
+		background-image: none !important;
+	}
+	.MissionHead{
+		padding-top: 50px !important;
+		font: normal 42px 'Open Sans', cursive !important;
+	}
+	.MissionContent{
+		text-align: justify !important;
+		margin-top: 64px;
+		font: normal 17px 'Open Sans', cursive !important;
+	}
+	.MissionDiv ul{
+		padding-bottom: 50px !important;
+	}
+	.ServiceDiv{
+		padding-bottom: 50px !important;
+	}
+	.ServiceHead{
+		padding-top: 50px !important;
+		font: normal 42px 'Open Sans', cursive !important;
+	}
+	.ServiceImg{
+		width: 300px !important;
+		margin-top: 47px;
+	}
+	.center{
+		width: 255px !important;
+		font: normal 25px 'Open Sans', cursive !important;
+		top: 78% !important;
+		left: 50% !important;
+	}
+
+
+  	.active{
+		border: none;
+	}
+	.navbar{
+		padding: 15px 30px 15px 30px;
+		height: auto;
+	}
+	.navbtn{
+		padding: 0.5rem 0rem !important;
+	}
+	.margint6p:hover{
+		transition: 0s;
+		color: #E5CD64; 
+		border-bottom: none;
+	}
+	.collapsebtn{
+		background: #E5CD64 0% 0% no-repeat padding-box;
+		border-radius: 5px;
+		color: #555555;
+		padding-top: 9px;
+		width: 60px;
+		text-align: center;
+	}
+	.aboutDiv2{
+		display: none;
+	}
+	.ContactHead{
+		padding-top: 50px !important;
+		font: normal 42px 'Open Sans', cursive !important;
+		margin-bottom: 25px !important;
+	}
+	#Contact-Section{
+		position: relative;
+		top: -20px;
+	}
+	.ContactBorder{
+		width: 350px !important;
+		display: block !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.lastContact{
+		margin-bottom: 50px;
+	}
+	.ContactBorder p{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.gmap{
+		width: 350px !important;
+		height: 300px !important;
+		display: block !important;
+		margin: auto !important;
+		margin-bottom: 20px !important;
+	}
+	.map{
+		font-size: 40px;
+	}
 }
 .HomeDiv{
 	height: 800px;
@@ -67,20 +176,19 @@ body{
 	background-size: cover;
 }
 .HomePara{
-	height: 103px;
 	position: absolute;
 	top: 355px;
 	left: 80px;
 }
 .HomePara1{
 	text-align: left;
-	font: normal 56px 'Baumans', cursive;
+	font: normal 56px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 }
 .HomePara2{
 	text-align: left;
-	font: normal 32px 'Baumans', cursive;
+	font: normal 32px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #E5CD64;
 }
@@ -91,13 +199,13 @@ body{
 	margin-top: 125px;
 	margin-bottom: 46px;
 	text-align: left;
-	font: normal 54px 'Baumans', cursive;
+	font: normal 54px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #E5CD64;
 }
 .AboutContent{
 	text-align: justify;
-	font: normal 22px 'Baumans', cursive;
+	font: normal 22px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #555555;
 }
@@ -117,9 +225,8 @@ body{
 }
 .MissionHead{
 	padding-top: 120px;
-	width: max-content;
-	margin: auto;
-	font: normal 54px 'Baumans', cursive;
+	text-align: center;
+	font: normal 54px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #555555;
 }
@@ -129,7 +236,7 @@ body{
     padding-left:1em !important;
     margin-left:1em;
     text-align: left;
-	font: normal 22px 'Baumans', cursive;
+	font: normal 22px 'Open Sans', cursive;
 	letter-spacing: 1.1px;
 	color: #555555;
 }
@@ -137,24 +244,27 @@ body{
 	padding-bottom: 110px;
 }
 .ServiceHead{
-	padding-top: 125px;
-	text-align: left;
-	font: normal 54px 'Baumans', cursive;
+	padding-top: 120px;
+	text-align: center;
+	font: normal 54px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #0E2549;
 }
 .ServiceImg{
-	width: 100%;
+	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 47px;
 }
 .center{
 	text-align: left;
-	font: normal 45px 'Baumans', cursive;
+	font: normal 35px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	position: absolute;
-	top: 75%;
-	left: 45%;
+	top: 70%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .ContactDiv{
@@ -162,7 +272,7 @@ body{
 }
 .ContactHead{
 	padding-top: 85px;
-	font: normal 54px 'Baumans', cursive;
+	font: normal 54px 'Open Sans', cursive;
 	letter-spacing: 0px;
 	color: #0E2549;
 	margin-bottom: 65px;
