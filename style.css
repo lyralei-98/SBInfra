@@ -1,0 +1,212 @@
+html{
+	scroll-behavior: smooth;
+}
+@font-face{
+    font-family: bauhaus;
+	src: url("fonts/Bauhaus_.ttf") format('truetype');
+}
+body{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Baumans', cursive;
+}
+.navbar{
+	height: 100px;
+	padding: 30px 80px 30px 80px;
+	background: transparent linear-gradient(180deg, #000000 0%, #00000074 100%) 0% 0% no-repeat padding-box;
+}
+.nav-link{
+	color: white;
+	transition: 0.3s;
+	font-size: 20px;
+	font-family: 'Baumans', cursive;
+}
+.margint6p{
+	margin-top: 6px;
+}
+.marginr60p{
+	margin-right: 40px;
+}
+.margint6p:hover{
+	transition: 0s;
+	color: #E5CD64; 
+	border-bottom: solid #E5CD64 2px;
+}
+.active{
+	color: #E5CD64; 
+	border-bottom: solid #E5CD64 2px;
+}
+@media only screen and (max-width: 1000px) {
+  	.active{
+		border: none;
+	}
+	.navbar{
+		height: auto;
+	}
+	.margint6p:hover{
+	transition: 0s;
+	color: #E5CD64; 
+	border-bottom: none;
+}
+}
+.navbar button{
+	outline: none;
+	background: #E5CD64 0% 0% no-repeat padding-box;
+	border-radius: 5px;
+	color: #555555;
+	padding: 12px 17px;
+	width: 124px;
+	text-align: center;
+}
+.HomeDiv{
+	height: 800px;
+	background-image: url("img/meeting.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.HomePara{
+	height: 103px;
+	position: absolute;
+	top: 355px;
+	left: 80px;
+}
+.HomePara1{
+	text-align: left;
+	font: normal 56px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+.HomePara2{
+	text-align: left;
+	font: normal 32px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #E5CD64;
+}
+.AboutDiv{
+	margin-bottom: 100px;
+}
+.AboutHead{
+	margin-top: 125px;
+	margin-bottom: 46px;
+	text-align: left;
+	font: normal 54px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #E5CD64;
+}
+.AboutContent{
+	text-align: justify;
+	font: normal 22px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #555555;
+}
+.AboutImg{
+	margin-top: 193px;
+	width: 500px;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+}
+.MissionSec{
+	background-color: #FCFCFC;
+	height: 760px;
+	background-image: url("img/MissionPic.png") ;
+    background-repeat: no-repeat;
+    background-position: top  251px left 302px ;
+}
+.MissionHead{
+	padding-top: 120px;
+	width: max-content;
+	margin: auto;
+	font: normal 54px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #555555;
+}
+.MissionContent{
+	margin-top: 64px;
+    list-style-type: disc !important;
+    padding-left:1em !important;
+    margin-left:1em;
+    text-align: left;
+	font: normal 22px 'Baumans', cursive;
+	letter-spacing: 1.1px;
+	color: #555555;
+}
+.ServiceDiv{
+	padding-bottom: 110px;
+}
+.ServiceHead{
+	padding-top: 125px;
+	text-align: left;
+	font: normal 54px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #0E2549;
+}
+.ServiceImg{
+	width: 100%;
+	margin-top: 47px;
+}
+.center{
+	text-align: left;
+	font: normal 45px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 75%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+.ContactDiv{
+	background: #FCFCFC ;
+}
+.ContactHead{
+	padding-top: 85px;
+	font: normal 54px 'Baumans', cursive;
+	letter-spacing: 0px;
+	color: #0E2549;
+	margin-bottom: 65px;
+}
+#Contact-Section{
+	position: relative;
+	top: -20px;
+}
+.ContactBorder{
+	width: 100%;
+	height: 120px;
+	border: 2px solid #555555;
+	border-radius: 25px;
+	margin-bottom: 43px;
+}
+.lastContact{
+	margin-bottom: 70px;
+}
+.ContactBorder p{
+	color: #555555 !important;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none !important;
+}
+.ContactBorder a:hover{
+	text-decoration: none;
+	color: #555555 !important;
+}
+.gmap{
+	width: 90%;
+}
+.map{
+	text-align: center;
+	color: #E5CD64;
+	font-size: 40px;
+}
+.toppad{
+	padding-top: 5px;
+}
+.footer{
+	color: white;
+	background: #333333 0% 0% no-repeat padding-box;
+}
+.footer p{
+	padding-top: 15px;
+}
